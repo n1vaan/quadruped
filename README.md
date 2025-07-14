@@ -1,4 +1,4 @@
-# BreatheTrack
+# Quadruped Robot
 
 ### Project Description
 
