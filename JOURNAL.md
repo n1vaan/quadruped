@@ -19,3 +19,14 @@ Today I spent around 2 hours constructing the central enclosure for the quadrupe
 
 ![Day 1 Image](img/day1.png)
 
+### July 3rd
+Time Spent: ~5 hours
+
+Today I spent around 5 hours designing the leg brace for the leg motor joints. This was especially time consuming because I learned to use a new tool: Fusion's Generative Design Tool. I first made a rough enclosure for the motor. This part was pretty easy. Then, I watched a tutorial on the generative design feature in Fusion. After watching it, I set the Preserve Geometry, Obstacle Geometry, and the Starting Shape. I ran several iterations of the Generative Design. After around 3 hours, I finally generated this really cool design that reduced weight while remaining structurally sound. I am really glad that I learned this new skill and will continue to use it on this project. 
+
+![Day 2 Image](img/day2.png)
+![Day 2 Image](img/day2_1.png)
+![Day 2 Image](img/day2_2.png)
+![Day 2 Image](img/day2_3.png)
+
+
