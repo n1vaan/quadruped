@@ -9,17 +9,9 @@ This is a smart quadruped robot dog that imitates the Boston Dynamics robot Spot
 
 We set out to build a quadruped robot to better understand how complex systems like locomotion, balance, and perception work together in robotics. This project gave us the opportunity to apply concepts like inverse kinematics, sensor integration, and real-time control in a hands-on way. Building a walking robot also pushed us to think carefully about both mechanical design and software logic.
 
-## Prototype CAD Design
-![CAD](img/prototypecad.png)
-
 ## Fully Assembled Prototype 
-![IRL](https://github.com/user-attachments/assets/fca9da71-7108-41bc-889d-3d14d4a01c25)
+![CAD](img/day4_1.png)
 
-## New PCB Schematic
-![Schematic](img/schematic.png)
-
-## PCB 3D Render
-![Board 3D](img/BreatheTrackBoard.png)
 
 ## Bill of Materials (BOM)
 
