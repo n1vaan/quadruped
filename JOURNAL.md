@@ -36,3 +36,13 @@ Time Spent: ~2 hours
 Today I spent 2 hours designing the knee brace for the knee motor joints. This was much faster than last time because I had much more knowledge and experience with the Generative Design Tool. However, I had to run more simulations this time because it kept converging to a result that would result in too much structural strain. After I generated a design I was happy with, I assembled it all together. 
 
 ![Day 3 Image](img/day3.png)
+
+### July 8th
+Time Spent: ~4 hours
+
+Today I spent 4 hours designing the final joint for the legs. This took a considerable amount of time because I had to experiment a lot with obstacle conditions to provide a joint that was structurally sound. This joint is probably the one that needs the most structural integrity because it will carry all the weight from the quadruped and also be the joints that are walked on. In the end, I am really proud of how the result looks; I hope that it is also strong in real life. 
+
+![Day 4 Image](img/day4.png)
+![Day 4 Image](img/day4_1.png)
+
+
