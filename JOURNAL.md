@@ -5,7 +5,7 @@ description: "A 12-DOF robotic quadruped powered by an ESP32, utelizing inverse 
 created_at: "2025-07-01"
 ---
 
-## Total Time Spent: ~10 hours   
+## Total Time Spent: ~12 hours   
 
 ### July 1st
 Time Spent: ~3 hours  
@@ -30,3 +30,9 @@ Today I spent around 5 hours designing the leg brace for the leg motor joints. T
 ![Day 2 Image](img/day2_4.png)
 
 
+### July 6th
+Time Spent: ~2 hours
+
+Today I spent 2 hours designing the knee brace for the knee motor joints. This was much faster than last time because I had much more knowledge and experience with the Generative Design Tool. However, I had to run more simulations this time because it kept converging to a result that would result in too much structural strain. After I generated a design I was happy with, I assembled it all together. 
+
+![Day 3 Image](img/day3.png)
