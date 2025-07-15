@@ -12,6 +12,8 @@ We set out to build a quadruped robot to better understand how complex systems l
 ## Fully Assembled Prototype 
 ![CAD](img/day4_1.png)
 
+## Rendered Prototype 
+![CAD](img/render.png)
 
 ## Bill of Materials (BOM)
 
