@@ -16,7 +16,7 @@ We set out to build a quadruped robot to better understand how complex systems l
 ![CAD](img/render.png)
 
 ## Circuit 
-![Circuitry](img/circuitdiagram.png)
+![Circuitry](img/schematic.png)
 
 ## Bill of Materials (BOM)
 
