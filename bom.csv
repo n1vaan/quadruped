@@ -1,9 +1,7 @@
 Component,Quantity,Price Estimate,Link
-MG996R Motors,8,$36,https://www.amazon.com/6-Pack-MG996R-Torque-Digital-Helicopter/dp/B07MFK266B/
-PCA9685,1,$14,https://www.amazon.com/HiLetgo-PCA9685-Channel-12-Bit-Arduino/dp/B07BRS249H/
-7.4V LiPo Battery,1,$8,https://www.amazon.com/Gens-ace-1000mAh-Helicopter-Airplane/dp/B012CMFAL2/
-XT60 Connectors,1,$9,https://www.amazon.com/Pairs-Female-Connector-Silicon-Battery/dp/B07QH249CR/
-1kg PLA,1,$12,https://www.amazon.com/eSUN-Printing-Filament-Printer-Printers/dp/B0CX1J7KXJ/
-12V to 5V Voltage Transformer,1,$10,https://www.amazon.com/VOLRANTISE-Converter-Voltage-Regulator-Transformer/dp/B09WZ9DC9W/
-Raspberry Pi Zero 2 W,1,$22,https://www.amazon.com/Raspberry-Zero-Bluetooth-RPi-2W/dp/B09LH5SBPS/ref=sr_1_1?crid=YBII58N2AFOE&dib=eyJ2IjoiMSJ9.3BENuF2Ktu1UHOlVshSOQZzPdcY9VetMFfLCt_cnJtKyG4m6kvjrZYj-Upstp7VqZ5hGCCLio9i8bRsnCZtpddN0fAAcCS9_AriKg-FHo6dtItEyPG7QCAOOMKk0KFGWQvbmohc-ScqLmoSfzOmZhhLlL2TRA_TMIk8vky2aN5XNiiVgrpjahg-J-Ae5p7Lnex38wwuj6Kzxu4ORkyE7moN_XeOC9_llyhx8fib8soY.Dmye3VPpw5p6UiQxGGoaQT12ZmI4RLMhwQkPma2joDM&dib_tag=se&keywords=raspberry+pi+0&qid=1752877463&sprefix=raspberry+pi+0%2Caps%2C212&sr=8-1
-Total,14,$111,
+MG996R Motors,8,$36,https://www.amazon.com/6-Pack-MG996R-Torque-Digital-Helicopter/dp/B07MFK266B/ref=asc_df_B0BMM1G74B
+PCA9685,1,$14,https://www.amazon.com/HiLetgo-PCA9685-Channel-12-Bit-Arduino/dp/B07BRS249H
+XT60 Connectors,1,$9,https://www.amazon.com/Pairs-Female-Connector-Silicon-Battery/dp/B07QH249CR
+12V to 5V Voltage Transformer,1,$10,https://www.amazon.com/VOLRANTISE-Converter-Voltage-Regulator-Transformer/dp/B09WZ9DC9W
+Raspberry Pi Zero 2 W,1,$22,https://www.amazon.com/Raspberry-Zero-Bluetooth-RPi-2W/dp/B09LH5SBPS
+Total,14,$91,N/A
