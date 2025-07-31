@@ -5,7 +5,7 @@ description: "A 12-DOF robotic quadruped powered by an ESP32, utelizing inverse 
 created_at: "2025-07-01"
 ---
 
-## Total Time Spent: ~20 hours   
+## Total Time Spent: ~26 hours   
 
 ### July 1st
 Time Spent: ~3 hours  
@@ -47,8 +47,8 @@ Today I spent 6 hours designing the final joint for the legs. This took a consid
 ![Day 4 Image](img/day4.png)
 ![Day 4 Image](img/day4_1.png)
 
-### July 29th
-Time Spent: ~4 hours
+### July 29th + July 30th
+Time Spent: ~6 hours
 
 Following Ducc's advice on redesigning the parts on my own, today I spent some time redesigning the joints for the quadruped. The hardest part was minimizing the bulk and mass without generative design. I did so by running stress tests on each part, looking for particular areas that were extremely low in stress and were surrounded by low stressed areas, and removing them. Another challenge was making mounts for the screwholes and motor attachments. Since I don't have the motors in hand and their mounts, I made some approximations that I will fine tune once the motors arrive. 
 
