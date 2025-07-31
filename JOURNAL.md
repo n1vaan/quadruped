@@ -52,5 +52,10 @@ Time Spent: ~6 hours
 
 Following Ducc's advice on redesigning the parts on my own, today I spent some time redesigning the joints for the quadruped. The hardest part was minimizing the bulk and mass without generative design. I did so by running stress tests on each part, looking for particular areas that were extremely low in stress and were surrounded by low stressed areas, and removing them. Another challenge was making mounts for the screwholes and motor attachments. Since I don't have the motors in hand and their mounts, I made some approximations that I will fine tune once the motors arrive. 
 
+I was particularly proud of the last leg joint. To add the spherical bottom that I have seen in many other prototypes, I used a Fusion form instead of the standard solids. Because of this method, I am now more comfortable with using Forms and have learned a new skill that I will definitely use in other projects. I then joined the form and solid to make a single unified part. Then, I used the Von Mises stress test to make some remove extrusions in areas that were particularly low in stress. Finally, I did some renders of the final product. 
+
+![Day 5 Image](img/full_leg.png)
+![Day 5 Image](img/hip_brace.png)
+![Day 5 Image](img/last_joint.png)
 ![Day 5 Image](img/newproto.png)
 
