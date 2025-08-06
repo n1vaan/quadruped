@@ -5,7 +5,7 @@ description: "A 12-DOF robotic quadruped powered by an ESP32, utelizing inverse 
 created_at: "2025-07-01"
 ---
 
-## Total Time Spent: ~26 hours   
+## Total Time Spent: ~30 hours   
 
 ### July 1st
 Time Spent: ~3 hours  
@@ -47,15 +47,29 @@ Today I spent 6 hours designing the final joint for the legs. This took a consid
 ![Day 4 Image](img/day4.png)
 ![Day 4 Image](img/day4_1.png)
 
-### July 29th + July 30th
-Time Spent: ~6 hours
+### July 29th 
+Time Spent: ~4 hours
 
 Following Ducc's advice on redesigning the parts on my own, today I spent some time redesigning the joints for the quadruped. The hardest part was minimizing the bulk and mass without generative design. I did so by running stress tests on each part, looking for particular areas that were extremely low in stress and were surrounded by low stressed areas, and removing them. Another challenge was making mounts for the screwholes and motor attachments. Since I don't have the motors in hand and their mounts, I made some approximations that I will fine tune once the motors arrive. 
 
-I was particularly proud of the last leg joint. To add the spherical bottom that I have seen in many other prototypes, I used a Fusion form instead of the standard solids. Because of this method, I am now more comfortable with using Forms and have learned a new skill that I will definitely use in other projects. I then joined the form and solid to make a single unified part. Then, I used the Von Mises stress test to make some remove extrusions in areas that were particularly low in stress. Finally, I did some renders of the final product. 
+I was particularly proud of the last leg joint. To add the spherical bottom that I have seen in many other prototypes, I used a Fusion form instead of the standard solids. Because of this method, I am now more comfortable with using Forms and have learned a new skill that I will definitely use in other projects. I then joined the form and solid to make a single unified part. Then, I used the Von Mises stress test to make some remove extrusions in areas that were particularly low in stress. 
+
+![Day 5 Image](img/last_joint.png)
+
+# July 30th 
+Time Spent: ~3 hours
+
+Today I redesigned the hip brace joint. First, I used my existing measurement of the motors as a guiding box that I had to build around for the part. I did this by first make a cube for the motor section. Then, I built around it by make sketch faces on the cube so that I could build around it. I found that this method was much harder becase filleting and having a fluid design between the faces was much harder to acheive, so I decided to first design the part and then use a remove extrusion for the motor section. I first made a basic cube design, and then filleted the back side so that there would be a larger range of motion for the joint. Then, I cut the whole for the motor, and also made another hole at the top to accomodate for the motor wires that generally stick out around 2 mm. Finally, I thickened the portions at the top and bottom of the motor slot so that I could screw the motor in. I was really happy with my progress today.  
+
+![Day 5 Image](img/hip_brace.png)
+
+# July 31st
+Time Spent: ~3 hours
+
+Today I made the central leg joint. Today was a much faster process because of the experiences and knowledge I had gained from yesterday and the day before. I started by make a log rectangular shape with a circle at the end for the leg. I didn't want it to be too long, as it would increase the moment of inertia and thus the torque required by the motor. Then, I extruded the bottom of the motor so that I could make a hole for the motor. Then, I followed yesterdays steps and thickened the tops and bottoms of the motor holes, both vertically and horizontally so that I could use screws. Finally, I made an arch between the top circular portion and the motor casing so that the design was more seamless. 
+
+Then, I assembled the whole thing into one file. This was time consuming at first, but I realized that I could just use reflections and rotations instead of copy-pasting and dragging, rotating, etc. When I finally assembled the whole thing, I was satisfied with the result and actually preferred the design to the AI one. I did some rendering and was finally completed. 
 
 ![Day 5 Image](img/full_leg.png)
-![Day 5 Image](img/hip_brace.png)
-![Day 5 Image](img/last_joint.png)
 ![Day 5 Image](img/newproto.png)
 
