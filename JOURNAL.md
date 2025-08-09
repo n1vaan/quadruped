@@ -73,3 +73,13 @@ Then, I assembled the whole thing into one file. This was time consuming at firs
 ![Day 5 Image](img/full_leg.png)
 ![Day 5 Image](img/newproto.png)
 
+# August 8th
+Time Spent: ~2 hours
+
+Today I made my own inverse kinematics code for the quadruped's leg movements. To do so, I started off on paper and geometrically understood the point of inverse kinematics. It aims to find joint angles to get to a desired position (x,y). Using the law of cosines, I solved for the first angle, and based off of that angle, I solved for the second angle using the law of sines. It was really interesting seeing how the stuff we learnt in school was actually very useful in application. Then, to visualize the results, I tried inputting the results into desmos so that I could manipulate the desired position (x,y) and see the resulting joint angles visualized. This was much more challenging because I found out that arcsin is limited to the range of [-pi/2, pi/2], so I decided to use another approach that I found online using arctan2. Using this, I recreated my calculation system. I got the angles correct, and to connect the two "joints", I parameterized the vector and made sure to add the old vectors position as constants to make sure that they looked connected. It was a very long and arduous process, but I am happy I got it done; I now have my code basically layed out for me, and figuring it out on my own was especially rewarding. 
+
+![Math](img/math.JPG)
+![Desmos](img/desmos.png)
+
+
+
