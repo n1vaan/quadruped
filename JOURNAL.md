@@ -81,5 +81,9 @@ Today I made my own inverse kinematics code for the quadruped's leg movements. T
 ![Math](img/math.JPG)
 ![Desmos](img/desmos.png)
 
+# August 9th
+Time Spent: ~3 hours
+
+Today I tried implementing the inverse kinematics math I did in code. This was pretty easy as all I had to do was rewrite the desmos code in C++'s syntax and wrap it in a method / function. Next, I tried to figure out the IMU logic. I had used an IMU before, but it was mainly for determining rotation in the XY Plane and not much beyond that. I looked at adafruit's documentation to understand more about it and wrote a method to extract values from  it. Then, I moved on to understanding how the PCA9685 works. This required me to code a method that converted the degree output from the inverseKinematics() function into Pulse Width Modulation signals. I wrote the method, but will have to calibrate it according to my motors when I receive them. Then, I wrote a basic function for leg movement, utelizing the inverseKinematics() and degreesToPulse() functions. Finally, I wrapped a sequence of leg movement functions in the walk() function, which I call in void loop. I will require a lot of fine tuning of the hyperparameters like l1, l2, and the motor ranges, but that will be easy once I receive the parts. I am really happy with my progress today because I was dreading the coding part, and am happy I got it over with. Now, hopefully my project is ready to be approved. 
 
 
