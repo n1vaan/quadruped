@@ -5,7 +5,7 @@ description: "A 12-DOF robotic quadruped powered by an ESP32, utelizing inverse 
 created_at: "2025-07-01"
 ---
 
-## Total Time Spent: ~30 hours   
+## Total Time Spent: ~32 hours   
 
 ### July 1st
 Time Spent: ~3 hours  
