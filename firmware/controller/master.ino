@@ -2,15 +2,20 @@
 #include <WiFi.h>
 #include <esp_wifi.h>
 
-// USE ESP32 DEVKIT V1 AS THE MASTER
-
+// MASTER: ESP32 DEVKIT V1
+ 
 uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 
+int pinX1 = A0;
+int pinY1 = A1;
+int pinX2 = A2;
+int pinX3 = A3;
+
 typedef struct struct_message {
-  char a[32];
-  int b;
-  float c;
-  bool d;
+  int x1;
+  int y1;
+  int x2;
+  int y2;
 } struct_message;
 
 struct_message myData;
@@ -28,7 +33,6 @@ void setup() {
   WiFi.mode(WIFI_STA);
   WiFi.STA.begin();
   
-  // Set explicit channel
   esp_wifi_set_channel(2, WIFI_SECOND_CHAN_NONE);
   
   delay(100);
@@ -53,10 +57,12 @@ void setup() {
 }
 
 void loop() {
-  strcpy(myData.a, "THIS IS A CHAR");
-  myData.b = random(1,20);
-  myData.c = 1.2;
-  myData.d = false;
+
+
+  myData.x1 = analogRead(pinX1);
+  myData.y1 = analogRead(pinY1);
+  myData.x2 = analogRead(pinX2);
+  myData.y2 = analogRead(pinY2);
 
   esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
 
@@ -66,5 +72,5 @@ void loop() {
   else {
     Serial.println("Error sending the data");
   }
-  delay(2000);
+  delay(10);
 }
