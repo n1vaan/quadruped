@@ -2,43 +2,54 @@
 #include <esp_wifi.h>
 #include <WiFi.h>
 
-// USE XIAO ESP32-S3 AS THE SLAVE
+// SLAVE: XIAO ESP32-S3
 
+int oldx1; 
+int oldy1;
+int oldx2; 
+int oldy2; 
+
+int cx1; 
+int cy1;
+int cx2; 
+int cy2; 
+
+int dx1;
+int dy1;
+int dx2;
+int dy2;
 
 typedef struct struct_message {
-  char a[32];
-  int b;
-  float c;
-  bool d;
+  int x1;
+  int y1;
+  int x2;
+  int y2;
 } struct_message;
 
 struct_message myData;
 
-void readMacAddress(){
-  uint8_t baseMac[6];
-  esp_err_t ret = esp_wifi_get_mac(WIFI_IF_STA, baseMac);
-  if (ret == ESP_OK) {
-    Serial.printf("%02x:%02x:%02x:%02x:%02x:%02x\n",
-    baseMac[0], baseMac[1], baseMac[2],
-    baseMac[3], baseMac[4], baseMac[5]);
-  } else {
-    Serial.println("Failed to read MAC address");
-  }
-}
-
 void OnDataRecv(const esp_now_recv_info_t *recv_info, const uint8_t *incomingData, int len) {
   memcpy(&myData, incomingData, sizeof(myData));
-  Serial.print("Bytes received: ");
-  Serial.println(len);
-  Serial.print("Char: ");
-  Serial.println(myData.a);
-  Serial.print("Int: ");
-  Serial.println(myData.b);
-  Serial.print("Float: ");
-  Serial.println(myData.c);
-  Serial.print("Bool: ");
-  Serial.println(myData.d);
-  Serial.println();
+
+  oldx1 = cx1;
+  oldy1 = cy1;
+  oldy2 = cx2; 
+  oldx2 = cy2;
+
+  cx1 = myData.x1;
+  cy1 = myData.y1;
+  cx2 = myData.x2; 
+  cy2 = myData.y2; 
+
+  Serial.print("X1: ");
+  Serial.print(cx1);
+  Serial.print(" | Y1: ");
+  Serial.print(cy1);
+  Serial.print(" | X2: ");
+  Serial.print(cx2);
+  Serial.print(" | Y2: ");
+  Serial.println(cy2);
+
 }
 
 void setup() {
@@ -55,15 +66,12 @@ void setup() {
     Serial.println("Error initializing ESP-NOW");
     return;
   }
-  
-  readMacAddress();
-  
+    
   esp_now_register_recv_cb(OnDataRecv);
   
   Serial.println("Slave setup complete");
 }
 
 void loop() {
-  Serial.println("Slave waiting...");
-  delay(1000);
+  
 }

@@ -6,10 +6,12 @@
  
 uint8_t broadcastAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
 
-int pinX1 = A0;
-int pinY1 = A1;
-int pinX2 = A2;
-int pinX3 = A3;
+int pinX1 = 34;
+int pinY1 = 35;
+int pinX2 = 33;
+int pinY2 = 32;
+
+int UPDATESPEED = 100;
 
 typedef struct struct_message {
   int x1;
@@ -64,6 +66,15 @@ void loop() {
   myData.x2 = analogRead(pinX2);
   myData.y2 = analogRead(pinY2);
 
+  Serial.print("X1: ");
+  Serial.println(myData.x1);
+  Serial.print("Y1: ");
+  Serial.println(myData.y1);
+  Serial.print("X2: ");
+  Serial.println(myData.x2);
+  Serial.print("Y2: ");
+  Serial.println(myData.y2);
+
   esp_err_t result = esp_now_send(broadcastAddress, (uint8_t *) &myData, sizeof(myData));
 
   if (result == ESP_OK) {
@@ -72,5 +83,5 @@ void loop() {
   else {
     Serial.println("Error sending the data");
   }
-  delay(10);
+  delay(UPDATESPEED);
 }
